@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8" />
+	<title>訂餐</title>
+	<link href="CSS/order.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<!--導覽列-->
+	<div id="title">
+		<img src="photos/logo.png" alt="">
+		<nav>
+			<div id="button">
+				<span><a href="order.html">訂餐</a></span>
+				<span><a href="Calender.html">我的日曆</a></span>
+				<span><a href="contect.html">意見回饋</a></span>
+			</div>
+			<span id="account"></span>
+		</nav>
+	</div>
+
+
+	<!--餐廳格-->
+	<div id="container">
+
+		<!--鼎DING_1-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F1_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">鼎DING<br>現炒榨菜肉絲麵</h2>
+				<button id="F1">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D1">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F1_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>鼎DING<br>現炒榨菜肉絲麵<br><br></h2>
+						<h4>營業時間</h4>
+						<p>11:00- 14:30<br>17:00- 0:00</p>
+						<h4>電話</h4>
+						<p>0908- 175- 757</p>
+						<h4>地址</h4>
+						<p>700022台南市中西區健康路一段110號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F1_fr>主食</a>
+						<a href=#F1_sc>切料</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F1_fr">榨菜肉絲湯麵 $112</h2>
+							<p>麵跟湯會分開包裝，辣度固定<br>無提供任何特殊客製</p>
+							<div></div>
+							<input id="F1_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F1_1', '鼎DING','榨菜肉絲湯麵', '$112' )">
+						</div>
+						<img src="photos/F1_1.png" alt="">
+					</div>
+					<div class="Food">
+						<div>
+							<h2>麻醬乾麵 $76</h2>
+							<p>本店麻醬偏甜，使用肥肉臊<br></p>
+							<div></div>
+							<input id="F1_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F1_2', '鼎DING','麻醬乾麵', '$76' )">
+						</div>
+						<img src="photos/F1_6.png" alt="">
+					</div>
+					<div class="Food">
+						<div>
+							<h2>月半滷肉飯 $40</h2>
+							<p>使用肥肉臊<br></p>
+							<div></div>
+							<input id="F1_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F1_3', '鼎DING','月半滷肉飯', '$40' )">
+						</div>
+						<img src="photos/F1_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>紫菜湯 $45</h2>
+							<p>不是紫菜蛋花湯，裡面不會加蛋喔!<br></p>
+							<div></div>
+							<input id="F1_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F1_4', '鼎DING','紫菜湯', '$45' )">
+						</div>
+						<img src="photos/F1_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F1_sc">剛滷[獨家餐點] $92</h2>
+							<p>豆干、海帶、甜不辣、滷丸、滷蛋、竹輪<br>若某品項售完，將替換成同價位商品</p>
+							<div></div>
+							<input id="F1_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F1_5', '鼎DING','剛滷[獨家餐點]', '$92' )">
+						</div>
+						<img src="photos/F1_5.png" alt="">
+					</div>
+				</div>
+				<button id="F1_Close">X</button>
+			</div>
+		</dialog>
+
+		<!--大埔鐵板燒_2-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F2_pfp.png">
+			</div>
+			<div class="content">
+				<h2 class="DN">大埔鐵板燒</h2><br>
+				<button id="F2">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D2">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F2_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>大埔鐵板燒<br><br></h2>
+						<h4>營業時間</h4>
+						<p>10:00- 22:00</p>
+						<h4>電話</h4>
+						<p>06- 2005539</p>
+						<h4>地址</h4>
+						<p>701台南市東區東門路二段137號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F2_fr>主食</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F2_fr">菲力牛排 $250</h2>
+							<p>附高麗菜、豆芽菜乙份<br>"白飯"需另外加點</p>
+							<div></div>
+							<input id="F2_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F2_1', '大埔鐵板燒','菲力牛排', '%250' )">
+						</div>
+						<img src="photos/F2_1.png" alt="">
+					</div>
+					<div class="Food">
+						<div>
+							<h2>蔥爆牛肉 $180</h2>
+							<p>附高麗菜、豆芽菜乙份<br>"白飯"需另外加點</p>
+							<div></div>
+							<input id="F2_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F2_2', '大埔鐵板燒','蔥爆牛肉', '$180' )">
+						</div>
+						<img src="photos/F2_2.png" alt="">
+					</div>
+					<div class="Food">
+						<div>
+							<h2>洋蔥蟳肉 $180</h2>
+							<p>附高麗菜、豆芽菜乙份<br>"白飯"需另外加點</p>
+							<div></div>
+							<input id="F2_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F2_3', '大埔鐵板燒','洋蔥蟳肉', '$180' )">
+						</div>
+						<img src="photos/F2_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>香煎鱈魚 $190</h2>
+							<p>附高麗菜、豆芽菜乙份<br>"白飯"需另外加點</p>
+							<div></div>
+							<input id="F2_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F2_4', '大埔鐵板燒','香煎鱈魚', '$190' )">
+						</div>
+						<img src="photos/F2_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>豆豉鮮蚵 $170</h2>
+							<p>附高麗菜、豆芽菜乙份<br>"白飯"需另外加點</p>
+							<div></div>
+							<input id="F2_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F2_5', '大埔鐵板燒','豆豉鮮蚵', '$170' )">
+						</div>
+						<img src="photos/F2_5.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>白飯 $10</h2>
+							<p></p>
+							<div></div>
+							<input id="F2_6" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F2_6', '大埔鐵板燒','白飯', '$10' )">
+						</div>
+						<img src="photos/F2_6.png" alt="">
+					</div>
+				</div>
+				<button id="F2_Close">X</button>
+			</div>
+		</dialog>
+
+
+		<!--小南便當_3-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F3_pfp.png" ; alt="">
+			</div>
+			<div class="content">
+				<h2 class="DN">小南便當</h2>
+				<button id="F3">查看店家</button>
+			</div>
+		</div>
+
+		<dialog id="D3">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F3_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>小南便當<br><br></h2>
+						<h4>營業時間</h4>
+						<p>10:00- 20:00</p>
+						<h4>電話</h4>
+						<p>06- 2135394</p>
+						<h4>地址</h4>
+						<p>700台南市中西區開山路209號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F3_fr>主食</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F3_fr">招牌雞腿飯 $95</h2>
+							<p></p>
+							<div></div>
+							<input id="F3_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F3_1', '小南便當','招牌雞腿飯', '$95' )">
+						</div>
+						<img src="photos/F3_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F3_fr">柳葉魚飯 $70</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F3_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F3_2', '小南便當','柳葉魚飯', '$70' )">
+						</div>
+						<img src="photos/F3_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F3_fr">煙燻雞腿飯 $85</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F3_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F3_3', '小南便當','煙燻雞腿飯', '$85' )">
+						</div>
+						<img src="photos/F3_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F3_fr">炸雞排飯 $85</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F3_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F3_4', '小南便當','炸雞排飯', '$85' )">
+						</div>
+						<img src="photos/F3_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F3_fr">招牌排骨飯 $75</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F3_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F3_5', '小南便當','招牌排骨飯', '$75' )">
+						</div>
+						<img src="photos/F3_5.png" alt="">
+					</div>
+					
+				</div>
+				<button id="F3_Close">X</button>
+			</div>
+		</dialog>
+
+
+		<!--八方雲集_4-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F4_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">八方雲集</h2>
+				<button id="F4">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D4">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F4_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>八方雲集<br><br></h2>
+						<h4>營業時間</h4>
+						<p>11:00- 20:30</p>
+						<h4>電話</h4>
+						<p>06- 2080109</p>
+						<h4>地址</h4>
+						<p>70157台南市東區東門路二段61號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F4_fr>鍋貼</a>
+						<a href=#F4_sc>水餃</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F4_fr">招牌鍋貼 $86</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_1', '八方雲集','招牌鍋貼', '$86' )">
+						</div>
+						<img src="photos/F4_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>辣味鍋貼 $88</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_2', '八方雲集','辣味鍋貼', '$88' )">
+						</div>
+						<img src="photos/F4_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>韭菜鍋貼 $88</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_3', '八方雲集','韭菜鍋貼', '$88' )">
+						</div>
+						<img src="photos/F4_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="#F4_sc">招牌水餃 $86</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_4', '八方雲集','招牌水餃', '$86' )">
+						</div>
+						<img src="photos/F4_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>韭菜水餃 $88</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_5', '八方雲集','韭菜水餃', '$88' )">
+						</div>
+						<img src="photos/F4_5.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>鮮蝦水餃 $108</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_6" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_6', '八方雲集','鮮蝦水餃', '$108' )">
+						</div>
+						<img src="photos/F4_6.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>招牌麻醬麵 $65</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F4_7" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F4_7', '八方雲集','招牌麻醬麵', '$65' )">
+						</div>
+						<img src="photos/F4_7.png" alt="">
+					</div>
+
+
+
+				</div>
+				<button id="F4_Close">X</button>
+			</div>
+		</dialog>
+
+
+
+		<!--四海遊龍_5-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F5_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">四海遊龍</h2>
+				<button id="F5">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D5">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F5_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>四海遊龍<br><br></h2>
+						<h4>營業時間</h4>
+						<p>11:00- 20:00</p>
+						<h4>電話</h4>
+						<p>06- 2363817</p>
+						<h4>地址</h4>
+						<p>701台南市東區長榮路三段68號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F5_fr>鍋貼</a>
+						<a href=#F5_sc>麵類</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F5_fr">招牌鍋貼 $66</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F5_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F5_1', '四海遊龍','招牌鍋貼', '$66' )">
+						</div>
+						<img src="photos/F5_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>辣味鍋貼 $77</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F5_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F5_2', '四海遊龍','辣味鍋貼', '$77' )">
+						</div>
+						<img src="photos/F5_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>韭菜鍋貼 $72</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F5_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F5_3', '四海遊龍','韭菜鍋貼', '$72' )">
+						</div>
+						<img src="photos/F5_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="#F5_sc">牛肉麵 $165</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F5_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F5_4', '四海遊龍','牛肉麵', '$165' )">
+						</div>
+						<img src="photos/F5_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>牛肉湯麵 $77</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F5_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F5_5', '四海遊龍','牛肉湯麵', '$77' )">
+						</div>
+						<img src="photos/F5_5.png" alt="">
+					</div>
+
+
+
+				</div>
+				<button id="F5_Close">X</button>
+			</div>
+		</dialog>
+
+
+
+
+		<!--大東鹹酥雞_6-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F6_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">大東鹹酥雞</h2>
+				<button id="F6">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D6">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F6_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>大東鹹酥雞<br><br></h2>
+						<h4>營業時間</h4>
+						<p>18:00- 02:00</p>
+						<h4>電話</h4>
+						<p>06- 2150285</p>
+						<h4>地址</h4>
+						<p>702台南市大同路二段128號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F6_fr>主食</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F6_fr">雞排 $80</h2>
+							<p>不能切<br></p>
+							<div></div>
+							<input id="F6_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F6_1', '大東鹹酥雞','雞排', '$80' )">
+						</div>
+						<img src="photos/F6_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>鹹酥雞 $60</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F6_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F6_2', '大東鹹酥雞','鹹酥雞', '$60' )">
+						</div>
+						<img src="photos/F6_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>魷魚 $60</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F6_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F6_3', '大東鹹酥雞','魷魚', '$60' )">
+						</div>
+						<img src="photos/F6_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>細薯 $25</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F6_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F6_4', '大東鹹酥雞','細薯', '$25' )">
+						</div>
+						<img src="photos/F6_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>薯餅 $20</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F6_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F6_5', '大東鹹酥雞','薯餅', '$20' )">
+						</div>
+						<img src="photos/F6_5.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>手工甜不辣 $30</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F6_6" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F6_6', '大東鹹酥雞','手工甜不辣', '$30' )">
+						</div>
+						<img src="photos/F6_6.png" alt="">
+					</div>
+
+
+
+				</div>
+				<button id="F6_Close">X</button>
+			</div>
+		</dialog>
+
+
+
+		<!--賣噹噹_7-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F7_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">麥當勞</h2>
+				<button id="F7">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D7">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F7_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>麥當勞<br><br></h2>
+						<h4>營業時間</h4>
+						<p>24小時營業</p>
+						<h4>電話</h4>
+						<p>06- 2146072</p>
+						<h4>地址</h4>
+						<p>700台南市中西區健康路一段48號1樓</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F7_fr>主食</a>
+						<a href=#F7_sc>飲料</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F7_fr">經典三拼 $141</h2>
+							<p>內含六塊雞塊，2塊勁辣雞翅<br>與2塊酥嫩雞翅</p>
+							<div></div>
+							<input id="F7_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_1', '麥當勞','榨菜肉絲湯麵', '$112' )">
+						</div>
+						<img src="photos/F7_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>原味麥脆雞 $65</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F7_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_2', '麥當勞','原味麥脆雞', '$65' )">
+						</div>
+						<img src="photos/F7_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>辣味麥脆雞 $65</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F7_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_3', '麥當勞','辣味麥脆雞', '$65' )">
+						</div>
+						<img src="photos/F7_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>雞塊 $69</h2>
+							<p>六塊<br></p>
+							<div></div>
+							<input id="F7_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_4', '麥當勞','雞塊', '$69' )">
+						</div>
+						<img src="photos/F7_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F7_sc">柳橙汁 $70</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F7_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_5', '麥當勞','柳橙汁', '$70' )">
+						</div>
+						<img src="photos/F7_5.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>阿薩姆奶茶(冰) $75</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F7_6" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_6', '麥當勞','阿薩姆奶茶(冰)', '$75' )">
+						</div>
+						<img src="photos/F7_6.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>玉米湯(大) $55</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F7_7" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_7', '麥當勞','玉米湯(大)', '$55' )">
+						</div>
+						<img src="photos/F7_7.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>熱可可(大) $70</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F7_8" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F7_8', '麥當勞','熱可可(大)', '$70' )">
+						</div>
+						<img src="photos/F7_8.png" alt="">
+					</div>
+
+
+				</div>
+				<button id="F7_Close">X</button>
+			</div>
+		</dialog>
+
+
+
+		<!--食方味_8-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F8_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">食方味</h2>
+				<button id="F8" onclick="">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D8">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F8_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>食方味<br><br></h2>
+						<h4>營業時間</h4>
+						<p>10:30- 21:00</p>
+						<h4>電話</h4>
+						<p>06- 2091990</p>
+						<h4>地址</h4>
+						<p>701台南市東區勝利路171巷9號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F8_fr>飯類</a>
+						<a href=#F8_sc>麵類</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F8_fr">牛肉蛋炒飯 $85</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F8_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F8_1', '食方味','牛肉蛋炒飯', '$85' )">
+						</div>
+						<img src="photos/F8_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>蝦仁蛋炒飯 $70</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F8_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F8_2', '食方味','蝦仁蛋炒飯', '$70' )">
+						</div>
+						<img src="photos/F8_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>鮭魚蛋炒飯 $80</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F8_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F8_3', '食方味','鮭魚蛋炒飯', '$80' )">
+						</div>
+						<img src="photos/F8_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2 id="F8_sc">炒泡麵 $70</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F8_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F8_4', '食方味','炒泡麵', '$70' )">
+						</div>
+						<img src="photos/F8_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>渣渣泡麵 $75</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F8_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F8_5', '食方味','渣渣泡麵', '$75' )">
+						</div>
+						<img src="photos/F8_5.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>起司炒泡麵 $80</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F8_6" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F8_6', '鼎DING','榨菜肉絲湯麵', '$80' )">
+						</div>
+						<img src="photos/F8_6.png" alt="">
+					</div>
+				</div>
+				<button id="F8_Close">X</button>
+			</div>
+		</dialog>
+
+
+
+		<!--晨間廚房_9-->
+		<div class="borderpart">
+			<div class="photopart">
+				<img src="photos/F9_pfp.png" ; alt="Dream">
+			</div>
+			<div class="content">
+				<h2 class="DN">晨間廚房</h2>
+				<button id="F9" onclick="">查看店家</button>
+			</div>
+		</div>
+		<dialog id="D9">
+			<div class="D_container">
+				<div class="F_left">
+					<div class="F_photo">
+						<img src="photos/F9_pfp2.png">
+					</div>
+					<div class="F_content">
+						<h2>晨間廚房<br><br></h2>
+						<h4>營業時間</h4>
+						<p>06:00- 14:30</p>
+						<h4>電話</h4>
+						<p>06- 2136699</p>
+						<h4>地址</h4>
+						<p>700台南市中西區南寧街1號</p>
+					</div>
+				</div>
+				<div class="F_right">
+					<div class="button_area">
+						<a href=#F9_fr>主食</a>
+					</div>
+					<div class="Food">
+						<div>
+							<h2 id="F9_fr">炒泡麵 $100</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F9_1" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F9_1', '晨間廚房','炒泡麵', '$100' )">
+						</div>
+						<img src="photos/F9_1.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>炒烏龍麵 $115</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F9_2" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F9_2', '晨間廚房','炒烏龍麵', '$115' )">
+						</div>
+						<img src="photos/F9_2.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>蘿蔔糕 $35</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F9_3" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F9_3', '晨間廚房','蘿蔔糕', '$35' )">
+						</div>
+						<img src="photos/F9_3.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>雞塊 $45</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F9_4" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F9_4', '晨間廚房','雞塊', '$45' )">
+						</div>
+						<img src="photos/F9_4.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>雞米花 $60</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F9_5" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F9_5', '晨間廚房','雞米花', '$60' )">
+						</div>
+						<img src="photos/F9_5.png" alt="">
+					</div>
+
+					<div class="Food">
+						<div>
+							<h2>晨間香腸拚盤 $115</h2>
+							<p><br></p>
+							<div></div>
+							<input id="F9_6" type="date" min="2023-06-15" max="2023-06-23" required>
+							<input type="submit" value="加入購物車" onclick="Recall('F9_6', '晨間廚房','晨間香腸拚盤', '$115' )">
+						</div>
+						<img src="photos/F9_6.png" alt="">
+					</div>
+
+
+
+				</div>
+				<button id="F9_Close">X</button>
+			</div>
+		</dialog>
+
+
+
+	</div>
+
+
+</body>
+<script src="JS/order.js" language="javascript"></script>
+
+</html>

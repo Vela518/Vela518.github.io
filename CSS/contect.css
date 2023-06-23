@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+body{
+	width: 100vw;
+	background-image: url("../photos/menu_bg.png");
+    background-size: 100%;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+/*導覽列*/
+#title {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    border-bottom: 5px rgb(255, 159, 68) dashed;
+}
+
+#title img {
+    width: auto;
+    height: 70px;
+    margin-left: 30px;
+    margin-right: -50px;
+}
+
+#title nav {
+    width: 100%;
+    display: flex;
+}
+
+#button {
+    width: 80%;
+}
+
+#button a {
+    color: rgb(115, 59, 38);
+    font-size: 130%;
+    margin-left: 12%;
+}
+
+#button a:hover {
+    font-size: 160%;
+    transition: all 0.3s;
+}
+
+#account {
+    position: fixed;
+    left: 90%;
+    top: 45px;
+    width: 20%;
+    font-size: 120%;
+}
+
+
+/*表單*/
+
+#container{
+    display: flex;
+    padding-top: 4%;
+}
+
+#con_left{
+    width: 36%;
+    margin-left: 10%;
+    margin-right: 3%;
+    border: 5px rgb(190, 128, 70) solid;
+    border-radius: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: bisque;
+    position: relative;
+}
+
+#con_right{
+    width:36%;
+    margin-left: 3%;
+    margin-right: 10%;
+    border: 5px rgb(190, 128, 70) solid;
+    border-radius: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: bisque;
+    position: relative;
+}
+
+.LINE{
+    margin-left: 10%;
+    width: 80%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.center{
+    text-align: center;
+}
+
+#con_left form{
+    margin-left: 10%;
+}
+
+#con_right form{
+    margin-left: 10%;
+}
+
+.sr{
+    color: gray;
+    font-size: 12px;
+}
+
+
+#con_left input{
+    position: absolute;
+    font-size: 100%;
+    left: 76%;
+    bottom: 5.5%;
+}
+
+#Submit{
+    position: absolute;
+    font-size: 100%;
+    left: 76%;
+    bottom: 5.5%;
+}

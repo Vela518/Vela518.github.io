@@ -1,0 +1,167 @@
+@charset "utf-8";
+body{
+	width: 100%;
+}
+
+*{
+    margin: 0;
+    text-decoration: none;
+}
+
+/*導覽列*/
+#title {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    border-bottom: 5px rgb(255, 159, 68) dashed;
+}
+
+#title img {
+    width: auto;
+    height: 70px;
+    margin-left: 30px;
+    margin-right: -50px;
+}
+
+#title nav {
+    width: 100%;
+    display: flex;
+}
+
+#button {
+    width: 80%;
+}
+
+#button a {
+    color: rgb(115, 59, 38);
+    font-size: 130%;
+    margin-left: 12%;
+}
+
+#button a:hover {
+    font-size: 160%;
+    transition: all 0.3s;
+}
+
+#account {
+    position: fixed;
+    left: 90%;
+    top: 45px;
+    width: 20%;
+    font-size: 120%;
+}
+
+
+
+
+/*表格*/
+#container{
+    margin-top: 25px;
+    
+}
+
+#con_table{
+    margin-left: 5%;
+    width: 90%;
+}
+
+#tablE{    
+    font-size: 224%;
+    color: 	#BEBEBE;
+    
+}
+
+.table_color{
+    color: black;
+    font-size: 100%;
+}
+
+tbody a{
+    color: black;
+    text-decoration: none;
+}
+
+td{
+    width: 10%;
+}
+
+
+
+/*dialog*/
+dialog {
+    width: 30%;
+    height: 60%;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    border: none;
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+dialog .close {
+    position: fixed;
+    right: 32%;
+    top: 16%;
+    margin-top: 10px;
+    margin-right: 18px;
+}
+
+dialog .clear{
+    left: 39%;
+    top: 67%;
+    font-size: 105%;
+}
+
+.IU{
+    margin-top: 5%;
+    padding: 5% 0 5% 3%;
+    /*background-color: aqua;*/
+}
+
+.ID{
+    /*background-color: aquamarine;*/
+    position: relative;
+    margin-top: 5%;
+    padding: 5% 0 10% 3%;
+}
+
+.ID h3{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.D_container{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    background-color: bisque;
+}
+
+
+.LINE{
+    margin-left: 10%;
+    width: 80%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 120%;
+}
+
+.Time{
+    font-size: 110%;
+    color: gray;
+}

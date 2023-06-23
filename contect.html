@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8" />
+	<title>意見回饋</title>
+	<link href="CSS/contect.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<!--導覽列-->
+	<div id="title">
+		<img src="photos/logo.png" alt="">
+		<nav>
+			<div id="button">
+				<span><a href="order.html">訂餐</a></span>
+				<span><a href="Calender.html">我的日曆</a></span>
+				<span><a href="contect.html">意見回饋</a></span>
+			</div>
+			<span id="account"></span>
+		</nav>
+	</div>
+
+	<!--表單-->
+	<div id="container">
+		<div id="con_left">
+			<div class="center">
+				<h2>聯絡我們</h2>
+				<p class="mr"><br>網站使用過程中遇到問題嗎？<br>馬上聯絡我們！<br><br></p>
+				<div class="LINE"></div>
+				<p><br>
+					客服電話：06-4598562 <br>
+					客服時間：09:30~17:30 <br>
+					E-mail: food_fighter@gmail.com <br><br>
+				</p>
+				<div class="LINE"></div>
+				<p class="mr"><br>或是留下您的評論，我們將在上班時間為您解答！</p>
+				<p class="sr">*此評論將記名，請務必注意用詞*<br><br></p>
+			</div>
+			<form id="123" method="post">
+				<span>想回報的種類：</span>
+				<select id="report" required>
+					<option>介面問題</option>
+					<option>系統問題</option>
+				</select>
+				<p><br>詳細內容：</p>
+				<textarea required name="other" rows="6" cols="35" maxlength="500"></textarea>
+				<input type="submit" value="提交表單">
+			</form>
+		</div>
+
+		<div id="con_right">
+			<div class="center">
+				<h2>回報餐點</h2>
+				<p class="mr"><br>對於餐點或店家不滿意嗎？請於此處反饋！</p>
+				<p class="sr">*此評論將記名，請務必注意用詞*<br><br><br></p>
+			</div>
+			<form id="456" method="post">
+				<span>想回報的種類：</span>
+				<select id="report" required>
+					<option>指定店家</option>
+					<option>指定店家的餐點</option>
+				</select>
+
+				<p><br>回報項目：</p>
+				<p class="sr">(店家名稱/ 店家+餐點名稱)</p>
+				<input type="text" required="required">
+
+				<p><br>詳細內容：</p>
+				<textarea required name="other" rows="6" cols="35" maxlength="500"></textarea>
+				<input type="submit" id="Submit" value="提交表單" onclick="SUB()">
+			</form>
+		</div>
+	</div>
+</body>
+<script src="JS/contect.js" language="javascript"></script>
+
+</html>
